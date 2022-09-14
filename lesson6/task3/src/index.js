@@ -1,8 +1,9 @@
-import { renderTasks } from './render.js';
-import { getItem, setItem } from './storage.js';
-import { addNewTask } from './newTask.js';
-import { change } from './changer.js';
-import { getTasksList, deleteTask } from './tasksGateWay.js';
+import { renderTasks } from './list/render.js';
+import { getItem, setItem } from './list/storage.js';
+import { addNewTask } from './list/newTask.js';
+import { change } from './list/changer.js';
+import { getTasksList, deleteTask } from './list/tasksGateWay.js';
+import './index.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
 	getTasksList().then((tasksList) => {
